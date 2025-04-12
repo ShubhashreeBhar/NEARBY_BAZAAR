@@ -27,7 +27,6 @@ html {
   background-color: #1e293b;
   /* Different from page body */
   border-bottom: 1px solid #334155;
-  /* z-index: 1000; */
   height: 90px;
 }
 
@@ -53,6 +52,10 @@ html {
   transition: background-color 0.3s ease;
 }
 
+.hero-section h1 {
+  font-size: 20px;
+}
+
 .nav-link:hover {
   background-color: #334155;
   color: #f1f5f9;
@@ -71,49 +74,64 @@ html {
 
 /* Hero Section */
 .hero-section {
-  min-height: 100vh;
+  margin-top: -180px;
+  /* Reduced margin-top to decrease the gap */
+  padding: 5rem 2rem;
+  /* background-color: #1e293b; */
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 2rem;
-  background-color: #0f172a;
+  min-height: 80vh;
+  font-size: 18px;
+  width: 1100px;
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+  /* Ensure content is visible over background */
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #f1f5f9;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  /* Shadow to make text more legible */
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #94a3b8;
   margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  /* Shadow to make text more legible */
 }
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
+  z-index: 2;
+  /* Ensure buttons appear above any other content */
 }
 
 .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
+  display: inline-block;
+  /* Ensures buttons are treated as inline blocks */
 }
 
 .secondary-btn {
   background-color: transparent;
-  border: 1px solid #38bdf8;
+  border: 2px solid #38bdf8;
   color: #38bdf8;
 }
 
@@ -121,10 +139,42 @@ html {
   background-color: #38bdf8;
   color: #0f172a;
 }
-.logout-btn { 
-  background: none; 
-  border: none; 
-  color: var(--primary-color); 
-  cursor: pointer;
-   font-size: 1rem; 
-   margin-left: 1rem; }
+
+.primary-btn {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.primary-btn:hover {
+  background-color: #0ea5e9;
+  color: #f8fafc;
+}
+
+/* Description Section */
+.description-section {
+  margin-top: 230px;
+  /* Reduced margin-top to decrease the gap */
+  /* padding: 4rem 2rem; */
+  /* background-color: #1e293b; */
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+
+.description-section p {
+  color: #cbd5e1;
+  font-size: 89px;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+}
+
+.description-section p1 {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}

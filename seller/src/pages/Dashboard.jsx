@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h2 className="dashboard-title">Welcome, {seller.name} 👋</h2>
+      <h2 className="dashboard-title">Welcome👋</h2>
 
       <div className="dashboard-sections">
         <div className="info-box">
