@@ -1,0 +1,49 @@
+.chooserole-container {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  width: 500px;
+  /* min-height: 1000vh; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.chooserole-box {
+  background-color: #1e293b;
+  padding: 3rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.chooserole-box h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #f8fafc;
+}
+
+.role-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.role-buttons button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.role-buttons button:hover {
+  background-color: #0ea5e9;
+}

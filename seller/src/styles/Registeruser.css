@@ -1,0 +1,53 @@
+.register-container-user {
+    background-color: #0f172a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box-user {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+}
+
+.register-box-user h2 {
+    color: #f8fafc;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.register-box-user input {
+    background: #334155;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.register-box-user button {
+    width: 100%;
+    background: #38bdf8;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-box-user button:hover {
+    background: #0ea5e9;
+}
+
+.error-msg {
+    color: #f87171;
+    margin-top: 1rem;
+    text-align: center;
+}

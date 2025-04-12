@@ -1,0 +1,67 @@
+.dashboard-container {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.dashboard-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #1d3557;
+  text-align: center;
+}
+
+/* Row layout */
+.dashboard-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.info-box,
+.orders-box {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 32%;
+  min-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.own-orders {
+  background-color: #f9f9f9;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.order-card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.order-card p {
+  margin: 5px 0;
+}
